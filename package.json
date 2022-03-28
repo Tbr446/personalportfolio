@@ -2,10 +2,11 @@
   "name": "portfolio2",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  
   "scripts": {
     "build": "npx tailwindcss -i ./index.css -o ./tailwind.css -w",
-    "server:watch": "nodemon --watch ./server -e js ./server/index.js"
+    "server:watch": "nodemon --watch ./server -e js ./server/index.js",
+    "parcel-build": "parcel build index.html && cp _redirects ./dist/"
   },
   "keywords": [],
   "author": "",
